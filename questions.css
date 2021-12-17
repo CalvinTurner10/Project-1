@@ -1,0 +1,131 @@
+@font-face {
+	font-family: myfirstfont;
+	src: url(../Develop/fonts/FontsFree-Net-GR-Milesons-Three.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: myfirstfont;
+}
+
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	margin-left: 30px;
+}
+
+.background {
+	background-image: url('./Develop/images/heros-removebg.png');
+	/* align-items: center;
+    text-align: center;
+    justify-content: center; */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* margin-top: -50px;
+    margin-left: -100px; */
+	/* z-index: 0; */
+	height: 730px;
+	width: 650px;
+	background-size: auto;
+	/* background-color: aqua; */
+}
+.container {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* margin: 10%;
+    margin-left: 20%; */
+	/* padding-left: 15%; */
+	border-radius: 8px;
+	border-style: solid;
+	padding: 5px;
+	background-color: rgba(24, 24, 27, 0.2);
+	/* padding-left: 400px ; */
+	position: fixed;
+	color: rgb(241, 202, 28);
+	font-size: 1.6rem;
+	font-family: myfirstfont;
+	/* background-color: white; */
+	/* background-image: url(../Develop/images/heros-removebg.png); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	transition: all 1.3s;
+	/* text-shadow: 1px 1px 1px goldenrod,
+        1px 2px 1px goldenrod,
+        1px 3px 1px goldenrod,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4); */
+}
+
+#choice0:hover,
+#choice1:hover,
+#choice2:hover,
+#choice3:hover {
+	background-color: red;
+	border-radius: 11px;
+	padding: 10px;
+	font-size: 1.5rem;
+	transition-duration: 0.5s;
+	-webkit-transition: left 1s ease;
+	transition: left 1s ease;
+}
+
+#choice0::after,
+#choice1::after,
+#choice2::after,
+#choice3:after {
+	content: '';
+	background: red;
+	/* display: block; */
+	position: absolute;
+	/* padding-top: 300%;
+	padding-left: 350%; */
+	/* margin-left: -20px !important; */
+	/* margin-top: -120%; */
+	opacity: 1;
+	transition: all 1s;
+}
+
+#choice0:active:after,
+#choice1:active:after,
+#choice2:active::after,
+#choice3:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0.8s;
+}
+
+@media screen and (max-width: 675px) {
+	.background {
+		background-image: url('./Develop/images/heros-removebg.png');
+		/* align-items: center;
+        text-align: center;
+        justify-content: center; */
+		position: fixed;
+		/* top: 50%;
+		left: 50%; */
+		transform: translate(-50%, -50%);
+		/* margin-top: -50px;
+        margin-left: -100px; */
+		/* z-index: 0; */
+		height: 730px;
+		width: 250px;
+		margin-left: -5%;
+		/* background-size: auto; */
+		/* background-color: aqua; */
+	}
+}

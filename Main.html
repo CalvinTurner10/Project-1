@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Shows this is is a html document. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Develop/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Develop/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Develop/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Develop/images/favicon-16x16.png">
+    
+    <!-- The title will appear on the page tab -->
+    <title>Hero Scope</title>
+    <link rel="shortcut icon" type="image/jpg" href="./Develop/images/favicon (2).ico"/>
+
+</head>
+
+<body>
+  <!-- div class used to create the nav bar and hold the dropdown buttons -->
+    <nav class="navigation-bar">
+      <!-- logo added to the middle of the nav bar -->
+        <div class="logoDiv"><img class="logo" src="./Develop/images/IMG_2163-removebg-preview.png"></div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">About Code Red
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a> <h3>Code Red</h3>
+                <p>Code Red is a group of men that has more than 3 month of experience achieving excellence in HTMl, CSS, Javascript and Web API's. We are based in Atlanta,Ga where we are currently sharpening our craft at Georgia Tech. HeroScope is our first of many projects to come!. Our exemplary group includes the analytical minds of Calvin, Chuck, Terrell and Yasin. As Code Red we strive to elevate and enrich the standards in the bootcamp using what we are learning to achieve greatness.</p></a>
+              <!-- <a href="#">Link 2</a>
+              <a href="#">Link 3</a> -->
+              
+            </div>
+          </div> 
+          <div class="dropdown2">
+            <button class="dropbtn2">Instructions 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2">
+              <a> <h3>Welcome to the Hero survey</h3>
+                <p>Gain insight into your personality & see what super traits you have with this short survey. A lot of your personality traits and habits can be revealed through a combination of defining characteristics, unconscious desires, decision making, or simply by giving honest answers to questions. Find out your HeroScope!...</p></a>
+              <!-- <a href="#">Link 2</a>
+              <a href="#">Link 3</a> -->
+              
+            </div>
+          </div> 
+
+    </nav>
+  <Header>
+        <div class="page" id="one">
+            <h1 class="glow">WHICH HERO ARE YOU?</h1>
+            <!-- <svg viewBox="0 0 500 500">
+                <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                <text width="500">
+                  <textPath xlink:href="#curve">
+                    WHICH HERO ARE YOU?
+                  </textPath>
+                </text>
+              </svg> -->
+    </Header>
+   
+    <video autoplay muted loop id="myVideo">
+        <source src="./Develop/images/Pexels Videos 3867.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    
+      
+    <!-- <div class="hero">
+        <img class="m-hero" src="./Develop/images/heros-removebg.png">
+    </div> -->
+    
+    <div class="hero">
+        <img class="m-hero" src="./Develop/images/heros-removebg.png">
+    </div>
+
+    <div class="enter-name" id="Name">
+        <div id="form">
+            <label for=""></label>
+            <input id= "inputText" type="text" placeholder= "Enter your name"><br>
+
+            <div id="button">
+                <button id="start-btn" onclick= "nextPage()" >Start</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- <section>
+        <article class= "instruction">
+            <div class= "instruction1">
+                <h3>Welcome to the Hero survey</h3>
+                <p>Gain insight into your personality with any of these short quizzes. A lot of our personality traits and habits can be revealed through our preferences, unconscious desires, split second decisions, or simply by observing our reactions to various events.</p>
+            </div>
+        </article>
+    </section> -->
+  <script src=""></script> 
+  <script src="index.js"></script>
+  <embed src="./Develop/themeMusic/111HeroScope(Theme).mp3" loop="true" autostart="true" controls='controls' height="80px" width="146px" id='theme' onloadeddata="setHalf()"> 
+</body>
+
+</html>

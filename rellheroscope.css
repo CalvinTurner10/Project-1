@@ -1,0 +1,366 @@
+@font-face {
+	font-family: myfirstfont;
+	src: url(../Develop/fonts/FontsFree-Net-GR-Milesons-Three.ttf);
+}
+
+h1 {
+	color: goldenrod;
+	font-family: myfirstfont;
+	position: relative;
+	margin: 20%;
+
+	font-size: 2rem;
+}
+
+.navigation-bar {
+	margin-top: -7.6px;
+	margin-left: -7px;
+	/* margin-right: 20px; */
+	width: 100vw;
+	height: 80px;
+	background-color: goldenrod;
+	box-shadow: 1px 1px 15px 8px rgba(255, 0, 0, 0.514);
+	/* position: fixed; */
+}
+
+.logDiv {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo:hover {
+	border-radius: 50px;
+	background-color: rgba(255, 0, 0, 0.637);
+}
+.logo {
+	border-radius: 50px;
+	display: flex;
+	vertical-align: middle;
+	width: 111px;
+	height: 80px;
+	margin: auto;
+
+	/* margin-left: -50%; */
+	margin-top: 3px;
+
+	/* display: block;
+		  width: 100px;
+		  height: 95px;
+		  margin: auto; */
+}
+
+.navigation-bar > a {
+	/* position: fixed; */
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	height: 80px;
+	line-height: 10px;
+	color: black;
+	padding-top: 40px;
+	margin: 0;
+	margin-bottom: 10px !important;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: inline-flex;
+	margin: 3px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 18%;
+	border: 2px solid green;
+	transition: all 1.2s;
+	box-shadow: 1px 1px 11px 20px rgb(25, 235, 6);
+}
+
+img::after {
+	transition-duration: 1.2s;
+}
+
+#myVideo {
+	background-position: center;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+body {
+	/* background-size: 100% auto; */
+	/* margin: 0; */
+	/* font-size: 17px; */
+
+	/* background-image: url(../Develop/images/space.jpeg); */
+	/* background-clip: url('../Develop/images/Pexels/ Videos/ 3867.mp4);'); */
+}
+
+li {
+	font-size: 1.8rem;
+	font-family: myfirstfont;
+	color: green;
+	margin: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: inline-flex;
+}
+
+.card,
+.cardMov {
+	height: 444px;
+	width: 300px;
+	background-color: rgba(255, 0, 0, 0.548);
+	padding: 5px;
+	border-radius: 12px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border: 6px solid rgba(244, 247, 54, 0.575);
+	float: left;
+	position: relative;
+	margin-left: -40px;
+	margin-top: -100px;
+	margin-right: 65px;
+}
+
+ol {
+	width: auto;
+	margin-top: -43.4px;
+	position: relative;
+}
+
+.card:hover,
+.cardMov:hover {
+	background-color: rgba(129, 248, 18, 0.445);
+	background-size: 50%;
+}
+
+.card::after {
+	position: absolute;
+	content: attr(data-text);
+	word-wrap: break-word;
+	margin-top: -101%;
+	margin-left: -50%;
+	overflow: visible;
+	opacity: 0;
+	transition: 1.6s;
+}
+
+.cardMov::after {
+	position: absolute;
+	content: attr(data-text);
+	word-wrap: break-word;
+	margin-top: -101%;
+	margin-left: -50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: 1.6s;
+}
+
+.cardMov:hover:after {
+	background-color: rgba(1, 12, 22, 0.699);
+	opacity: 1;
+	border-radius: 8px;
+}
+
+.card:hover:after {
+	background-color: rgba(0, 8, 15, 0.637);
+	opacity: 1;
+	border-radius: 8px;
+}
+
+#player {
+	position: relative;
+	margin-left: 13px;
+	margin-right: 111px;
+}
+
+p {
+	font-size: 2rem;
+	background-color: rgba(240, 255, 255, 0.808);
+	border-radius: 15px;
+	font-family: myfirstfont;
+}
+
+span {
+	background-color: black;
+	padding: 5px;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) and (min-width: 352px) {
+	.card {
+		height: 444px;
+		width: 292px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-left: -10px;
+		margin-top: 40px;
+		position: relative;
+	}
+
+	.cardMov {
+		height: 444px;
+		width: 292px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-top: -15px;
+		margin-left: -40px;
+		margin-bottom: 15px;
+		position: relative;
+	}
+
+	ol {
+		width: 300px;
+		margin-top: -500px;
+		position: relative;
+		/* float: left; */
+		margin-left: 1px;
+	}
+
+	#player {
+		position: relative;
+		margin-left: -2px;
+		margin-right: 100px;
+		margin-top: 15px;
+	}
+
+	li {
+		font-size: 1.7rem;
+		font-family: myfirstfont;
+		color: green;
+		margin: 5px;
+		width: 360px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: inline-flex;
+	}
+}
+
+@media screen and (max-width: 1471px) and (min-width: 767px) {
+	#player {
+		position: relative;
+		margin-left: 50px;
+		margin-right: 10px;
+		margin-top: -100px;
+	}
+
+	.card {
+		height: 444px;
+		width: 300px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-left: 433px;
+		margin-top: 40px;
+		position: relative;
+	}
+
+	.cardMov {
+		height: 444px;
+		width: 300px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-left: -15px;
+		margin-right: 25px;
+		margin-bottom: 33px;
+		position: relative;
+	}
+	ol {
+		width: 1000px;
+		height: 300px;
+		margin-top: -33.4px;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 766px) and (min-width: 501px) {
+	.card {
+		height: 444px;
+		width: 300px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-left: 165px;
+		margin-top: 60px;
+		position: relative;
+	}
+
+	.cardMov {
+		height: 444px;
+		width: 300px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-top: 8px;
+		margin-left: 65px;
+		margin-right: 25px;
+		margin-bottom: 33px;
+		position: relative;
+	}
+
+	#myVideo {
+		background-position: center;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -1;
+	}
+
+	#player {
+		position: relative;
+		margin-left: 172px;
+		margin-right: 10px;
+		margin-top: 22px;
+	}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./Develop/images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./Develop/images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./Develop/images/favicon-16x16.png"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/jpg"
+			href="./Develop/images/favicon (2).ico"
+		/>
+		<title>Hero Scope</title>
+		<link rel="stylesheet" href="./questions.css" />
+	</head>
+
+	<body>
+		<video autoplay muted loop id="myVideo">
+			<source src="../Develop/images/Pexels Videos 3867.mp4" type="video/mp4" />
+			Your browser does not support HTML5 video.
+		</video>
+		<audio id="sound2">
+			<source src="./questionsassets/Sci-fi_click.wav" type="audio/mpeg" />
+		</audio>
+
+		<div class="background"></div>
+
+		<div class="container">
+			<h2 id="question"></h2>
+			<br />
+			<ul type="none">
+				<li class="option">
+					<span id="choice0" onclick="chooseAnswer(this)"></span>
+				</li>
+
+				<li class="option">
+					<span id="choice1" onclick="chooseAnswer1(this)"></span>
+				</li>
+
+				<li class="option">
+					<span id="choice2" onclick="chooseAnswer2(this)"></span>
+				</li>
+
+				<li class="option">
+					<span id="choice3" onclick="chooseAnswer3(this)"></span>
+				</li>
+			</ul>
+			<br />
+			<h4 id="whatQueNum"></h4>
+			<!-- <h4 id="nextDisplay"></h4> -->
+		</div>
+		<script src="question.js"></script>
+	</body>
+</html>
